@@ -1,13 +1,20 @@
 const express = require("express");
+var Datastore = require('nedb')
+  , db = new Datastore();
+  
+const backend = require("./src/back");
 
-const app = express();
+db.insert({ contact: "gabriel"});
+db.insert({ contact: "alejandro"});
+
+
 const port = process.env.PORT || 8080;
 
-app.get("/api", (req,res) => {
-    console.log("Requested / route");
-    res.send({result: true})
-});
+const app = express();
+backend(app,db);
+
+
 
 app.listen(port, () => {
-    console.log(`Server TRULY ready at port ${port}`);
-})
+    console.log(`Server ready at port ${port}`);
+});
