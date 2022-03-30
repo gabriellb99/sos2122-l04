@@ -1,5 +1,5 @@
-Package L04
-This is my first package
+# Code from labs
+This is package l07
 
 ## Install
 ```
@@ -11,4 +11,4 @@ npm install
  npm start
 ```
 
-Done by [gablopbel] 
+Done by [@gablopbel]
