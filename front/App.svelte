@@ -1,6 +1,6 @@
 <script>
 	import ContactsTable from './ContactsTable.svelte';
-	export let name;
+	//export let name;
 
 </script>
 
@@ -18,7 +18,7 @@
 	}
 
 	h1 {
-		color: #ff3e00;
+		color: #1b13b5;
 		text-transform: uppercase;
 		font-size: 4em;
 		font-weight: 100;
