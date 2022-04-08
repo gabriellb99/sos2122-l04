@@ -1,7 +1,7 @@
 {
-  "name": "l08",
+  "name": "l09",
   "version": "1.0.0",
-  "description": "code from l08",
+  "description": "code from l09",
   "main": "index.js",
   "scripts": {
     "build": "rollup -c",
@@ -12,7 +12,11 @@
   "author": "gablopbel",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.17.3"
+    "body-parser": "^1.20.0",
+    "express": "^4.17.3",
+    "nedb": "^1.8.0",
+    "svelte-spa-router": "^3.2.0",
+    "sveltestrap": "^5.9.0"
   },
   "devDependencies": {
     "@rollup/plugin-commonjs": "^17.0.0",
