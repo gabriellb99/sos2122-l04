@@ -1,15 +1,31 @@
 {
-  "name": "l04",
+  "name": "l10",
   "version": "1.0.0",
-  "description": "my first module",
+  "description": "code from l10",
   "main": "index.js",
   "scripts": {
+    "build": "rollup -c",
+    "dev": "rollup -c -w",
     "start": "node index.js",
     "test": "npx newman run ./tests/backend.json -e ./tests/env/local.json"
   },
   "author": "gablopbel",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.17.3"
+    "body-parser": "^1.20.0",
+    "express": "^4.17.3",
+    "nedb": "^1.8.0",
+    "svelte-spa-router": "^3.2.0",
+    "sveltestrap": "^5.9.0"
+  },
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^17.0.0",
+    "@rollup/plugin-node-resolve": "^11.0.0",
+    "rollup": "^2.3.4",
+    "rollup-plugin-css-only": "^3.1.0",
+    "rollup-plugin-livereload": "^2.0.0",
+    "rollup-plugin-svelte": "^7.0.0",
+    "rollup-plugin-terser": "^7.0.0",
+    "svelte": "^3.0.0"
   }
 }
