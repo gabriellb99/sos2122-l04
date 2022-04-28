@@ -24,13 +24,13 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "{{HOST}}:{{PORT}}",
+					"raw": "{{HOST}}:{{PORT}}/api/v1/contacts",
 					"host": [
 						"{{HOST}}"
 					],
 					"port": "{{PORT}}",
 					"path": [
-						"api"
+						"api/v1/contacts"
 					]
 				}
 			},
