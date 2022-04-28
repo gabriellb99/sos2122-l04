@@ -24,7 +24,7 @@
 
 	async function insertContact(){
 		console.log("Inserting contacts......." + JSON.stringify(newContact));
-		const res = await fetch("/api/v1/contacts",
+		const res = await fetch("/api/v1/contacts/",
 			{
 				method: "POST",
 				body: JSON.stringify(newContact),
@@ -59,9 +59,12 @@
 			</tr>
 			{#each contacts as contact}
 			<tr>
-				<td><a href="/#/contact/{contact.name}"> {contact.name}</a></td>
+				<td>{contact.name}</td>
 				<td>{contact.phone}</td>
 				<td>{contact.email}</td>
+				<td><Button outline color="warning" on:click={function(){
+					window.location.href =  `/#/contact/${contact.name}`
+				}}>Edit</Button></td>
 			</tr>				
 			{/each}
 		</tbody>

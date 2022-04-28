@@ -1,7 +1,7 @@
 {
-  "name": "l09",
+  "name": "l10",
   "version": "1.0.0",
-  "description": "code from l09",
+  "description": "code from l10",
   "main": "index.js",
   "scripts": {
     "build": "rollup -c",
