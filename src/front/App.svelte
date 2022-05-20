@@ -20,3 +20,8 @@
 	<Router {routes} />
 </main>
 
+<style>
+	h1 {
+		color : rgb(0, 4, 255);
+	}
+</style>

@@ -114,6 +114,8 @@ module.exports = function (app) {
         res.sendStatus(201);
     });
 
+
+
     app.get("/data",(req,res)=>{
         var data = [];
         for(i=0;i<8;i++){

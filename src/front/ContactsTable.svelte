@@ -52,9 +52,9 @@
 		</thead>
 		<tbody>
 			<tr>
-				<td><input bind:value="{newContact.name}"></td>
-				<td><input bind:value="{newContact.phone}"></td>
-				<td><input bind:value="{newContact.email}"></td>
+				<td><input id="name" bind:value="{newContact.name}"></td>
+				<td><input id="phone" bind:value="{newContact.phone}"></td>
+				<td><input id="email" bind:value="{newContact.email}"></td>
 				<td><Button outline color="primary" on:click="{insertContact}">Insert</Button></td>
 			</tr>
 			{#each contacts as contact}

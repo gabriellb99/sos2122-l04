@@ -1,7 +1,7 @@
 {
-  "name": "l10",
+  "name": "l11",
   "version": "1.0.0",
-  "description": "code from l10",
+  "description": "code from l11",
   "main": "index.js",
   "scripts": {
     "build": "rollup -c",
@@ -13,8 +13,11 @@
   "license": "ISC",
   "dependencies": {
     "body-parser": "^1.20.0",
+    "cors": "^2.8.5",
     "express": "^4.17.3",
     "nedb": "^1.8.0",
+    "puppeteer": "^14.1.1",
+    "request": "^2.88.2",
     "svelte-spa-router": "^3.2.0",
     "sveltestrap": "^5.9.0"
   },
